@@ -23,7 +23,15 @@
 	 background-color: #55555 !important;
  }
  
+ .dropdown-menu > li > a {
+	font-family: 'Roboto', sans-serif !important;
+    background-color: #888888;
+	color: #AA88BB;
+    background-image: none;
+}
+ 
 .dropdown-menu > li > a:hover {
+	font-family: 'Roboto', sans-serif !important;
     background-color: #888888;
 	color: #AA88BB;
     background-image: none;
@@ -76,5 +84,3 @@
 	position: relative;
 	color: black;
 }
-
-.
