@@ -25,7 +25,7 @@
  
  .dropdown-menu > li > a {
 	font-family: 'Roboto', sans-serif !important;
-    background-color: #888888;
+    background-color: #555555;
 	color: #AA88BB;
     background-image: none;
 }
@@ -85,10 +85,4 @@
 	border: 1px solid #111111;
 	position: relative;
 	color: black;
-<<<<<<< HEAD
 }
-=======
-}
-
-.
->>>>>>> origin/master
