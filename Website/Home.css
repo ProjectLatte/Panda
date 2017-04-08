@@ -55,12 +55,6 @@
 	color: blue;
 }
 
-@media (min-width: 768px max-width: 992px) {
-	.tablet-comp {
-		
-	}
-}
-
 .btn a:visited {
 	color: blue;
 }
