@@ -31,10 +31,12 @@
 }
 
 .top-text {
+	font-family: 'Roboto', sans-serif !important;
 	text-align: center;
 }
 
 .list-item {
+	font-family: 'Roboto', sans-serif !important;
 	text-align: center;
 	cursor: pointer;
 	padding: 8px 18px;
