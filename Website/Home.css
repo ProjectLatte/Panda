@@ -24,6 +24,7 @@
  }
  
 .dropdown-menu > li > a:hover {
+	font-family: 'Roboto', sans-serif !important;
     background-color: #888888;
 	color: #AA88BB;
     background-image: none;
