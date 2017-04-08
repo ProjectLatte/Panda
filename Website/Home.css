@@ -2,13 +2,6 @@
 	font-family: 'Roboto', sans-serif !important;
 }
 
-.background {
-	
-}	
-.foreground {
-	
-}
-
 .navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a {
 	font-family: 'Roboto', sans-serif !important;
 }
@@ -57,6 +50,7 @@
 	position: relative;
 	color: black;
 }
+
 .list-item:hover {
 	top: -2px;
 	text: bold;
@@ -65,6 +59,7 @@
 .list-item a:link {
 	color: blue;
 }
+
 
 .btn a:visited {
 	color: blue;
