@@ -1,0 +1,80 @@
+.html {
+	font-family: 'Roboto', sans-serif !important;
+}
+
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a {
+	font-family: 'Roboto', sans-serif !important;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+	top: -1;
+	font-family: 'Roboto', sans-serif !important;
+    background-color: #444444;
+    color: #AA88BB;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a, .navbar-default .navbar-nav .open .dropdown-menu {
+	font-family: 'Roboto', sans-serif !important;
+    background-color: #333333;
+    color:#AA88BB;
+ }
+ 
+ .jumbotron {
+	 background-color: #55555 !important;
+ }
+ 
+.dropdown-menu > li > a:hover {
+    background-color: #888888;
+	color: #AA88BB;
+    background-image: none;
+}
+
+.top-text {
+	text-align: center;
+}
+
+.list-item {
+	text-align: center;
+	cursor: pointer;
+	padding: 8px 18px;
+	border: 1px solid #111111;
+	position: relative;
+	color: black;
+}
+
+.list-item:hover {
+	top: -2px;
+	text: bold;
+}
+
+.list-item a:link {
+	color: blue;
+}
+
+.btn a:visited {
+	color: blue;
+}
+
+.btn a:hover {
+	top: -2px;
+	text: bold;
+}
+
+.btn a:link {
+	color: black;
+}
+
+.btn a:visited {
+	color: black;
+}
+
+.btn a {
+	text-align: center;
+	cursor: pointer;
+	padding: 8px 18px;
+	border: 1px solid #111111;
+	position: relative;
+	color: black;
+}
+
+.
