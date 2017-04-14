@@ -42,13 +42,20 @@
 }
 
 .list-view-items {
-	opacity: 0 !important;
-	transition: opacity 300ms ease-in-out;
+	animation: fadeIn 1s fade-in-out 1s;
 }
 
-.list-view-items:hover {
-	opacity: 1 !important;
-	filter: alpha(opacity=100) !important;
+@keyframes fadeIn {
+	
+	0% {
+		opacity: 0 !important;
+		filter: alpha(opacity=100) !important;
+	}
+	
+	100% {
+		opacity: 0 !important;
+		filter: alpha(opacity=100) !important;
+	}
 }
 
 .list-item {
