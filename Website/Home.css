@@ -56,6 +56,14 @@
 	text: bold;
 }
 
+.form {
+	display: inline;
+}
+
+.input {
+	display: inline;
+}
+
 .list-item a:link {
 	color: blue;
 }
