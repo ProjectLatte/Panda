@@ -21,4 +21,4 @@ If you'd like to join our Discord server and chat about this website in #project
 
 Thanks for reading! If you'd like more info about Project Latté, see the [Whitepaper](https://docs.google.com/document/d/14VWXBxIrGsOFvggM_e6oAekCrn_I6TGmkiZPr2-ekUw/edit#) made by Lance. 
 
-Remember that only contributing Pull Requests will be accepted.
+Remember that only contributing Pull Requests will be merged.
