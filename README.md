@@ -16,9 +16,9 @@ If you'd like to contribute, fork this repository by clicking Fork. Once it's fo
 
 After that, send in a Pull Request on the main GitHub page, not your forked repository. Google it if you don't know how to do it.
 
-If you'd like to join our Discord server and chat about this website in #projectlatte, do so here:
+If you'd like to join our Discord server and chat about this website in #general (the #projectlatte is for devs only), do so here:
   [![Discord](https://discordapp.com/api/guilds/234414439330349056/widget.png?style=shield)](https://discord.gg/aZ4CV3b)
 
 Thanks for reading! If you'd like more info about Project Latté, see the [Whitepaper](https://docs.google.com/document/d/14VWXBxIrGsOFvggM_e6oAekCrn_I6TGmkiZPr2-ekUw/edit#) made by Lance. 
 
-Remember that only contributing Pull Requests will be accepted.
+Remember that only contributing Pull Requests will be merged.
