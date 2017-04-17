@@ -54,7 +54,7 @@ session_start();
 					
 					
 					<form action="/dbtest.php" method="POST" id="logoutForm" style="display: none">
-                                            <input type="submit" name="logout">
+                                            <input type="submit" name="logout" value="Log Out">
                                         </form>
                                         
                                         <?php
