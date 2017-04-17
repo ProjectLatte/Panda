@@ -51,9 +51,19 @@ session_start();
 							</ul>
 						</li>-->
 					</ul>
-					<a class="login">
-						<?php if (isset($_SESSION['currentuser'])) { echo htmlspecialchars($_SESSION['currentuser'], ENT_QUOTES); } else { echo "Log In &gt;"; } ?>
-					</a>
+					
+					
+					<form action="dbtest.php" method="POST" id="logoutForm" style="display: none">
+                                        </form>
+                                        
+                                        <?php
+                                            if (isset($_SESSION['currentuser'])) {
+                                                echo '<a class="login logout" onclick="logout()">'.htmlspecialchars($_SESSION['currentuser'], ENT_QUOTES).'</a>';
+                                            } else {
+                                                echo '<a class="login">Log In &gt;</a>';
+                                            }
+                                        ?>
+					
 				</div>
 			</div>
 
@@ -159,5 +169,6 @@ session_start();
 
 		<!--Scripts-->
 		<script src="home.js"></script>
+		<script src="site.js"></script>
 	</body>
 </html>
