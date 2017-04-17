@@ -1,6 +1,6 @@
-@keyframes slideInFromLeft {
+@keyframes slideInFromBottom {
   0% {
-    transform: translateX(-100%);
+    transform: translateY(100%);
   }
   
   100% {
@@ -39,7 +39,7 @@ div.page-info-middle {
 }
 
 .container-fluid {  
-	animation: 1s ease-out 0s 1 fadeIn;
+	animation: 1s ease-out 0s 1 slideInFromBottom;
 }
 
 .welcome {
