@@ -1,3 +1,6 @@
+<?php
+session_start();
+?!
 <html>
 	<head>
 		<title>Home | Let's Explore</title>	
@@ -49,7 +52,7 @@
 						</li>-->
 					</ul>
 					<a class="login">
-						Log In &gt;
+						<?php if (isset($_SESSION['username'])) { echo htmlspecialchars($_SESSION['username'], ENT_QUOTES); } else { echo "Log In &gt; } ?>
 					</a>
 				</div>
 			</div>
