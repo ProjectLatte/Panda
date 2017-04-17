@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
+* {
+    font-family: "Roboto";
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+}
+
+body {
+    margin-top: 48px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+div.navbar {
+    position: fixed;
+    height: 48px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0,0,0,.7);
+    color: #fff;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+div.navbarContent {
+    display: flex;
+    vertical-align: middle;
+    width: 800px;
+    overflow-x: auto;
+}
+
+div.navbarImage {
+    display: flex;
+    padding-top: calc(1em + 8px);
+}
+
+ul.navbarItems {
+    display: flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+ul.navbarItems a {
+    text-decoration: none;
+    display: block;
+    padding: 14px;
+    color: #fff;
+    -webkit-transition: .25s ease-out;
+    -moz-transition: .25s ease-out;
+    transition: .25s ease-out
+}
+
+ul.navbarItems a.selectedItem {
+    background-color: #006400
+}
+
+ul.navbarItems a:hover {
+    background-color: #000
+}
+
+div.warning {
+    padding: 5px;
+    padding-left: 100px;
+    background-color: rgb(255, 100, 0);
+}
+
+div.blockContent {
+    padding-left: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+div.blockContent * {
+    padding: 0px;
+}
+
+div.blockLink {
+    cursor: pointer;
+    transition: .25s ease-out;
+}
+
+div.blockLink:hover {
+    padding-left: 150px;
+}
