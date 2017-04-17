@@ -53,7 +53,7 @@ session_start();
 					</ul>
 					
 					
-					<form action="dbtest.php" method="POST" id="logoutForm" style="display: none">
+					<form action="/dbtest.php" method="POST" id="logoutForm" style="display: none">
                                             <input type="submit" name="logout">
                                         </form>
                                         
@@ -61,7 +61,7 @@ session_start();
                                             if (isset($_SESSION['currentuser'])) {
                                                 echo '<a class="login logout" onclick="logout()">'.htmlspecialchars($_SESSION['currentuser'], ENT_QUOTES).'</a>';
                                             } else {
-                                                echo '<a class="login">Log In &gt;</a>';
+                                                echo '<a class="login" href="/dbtest.php">Log In &gt;</a>';
                                             }
                                         ?>
 					

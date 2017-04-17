@@ -94,3 +94,20 @@ div.blockLink {
 div.blockLink:hover {
     padding-left: 150px;
 }
+
+a.login {
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a.login:hover {
+    background-color: black;
+}
