@@ -2,7 +2,7 @@
   0% {
     transform: translateY(100%);
   }
-  
+
   100% {
     transform: translateX(0);
   }
@@ -30,7 +30,7 @@ div.page-info-middle {
 	color: #DDDDDD;
 	padding: 50px;
 	padding-top: 98px;
-	background-image: url('main_back.jpg');
+	background-image: url('../imgs/temp_bg.jpg');
 	background-size: 100% 400%;
 	background-repeat: no-repeat;
 	background-color: #BBAABB;
@@ -38,7 +38,7 @@ div.page-info-middle {
 	margin: 0px;
 }
 
-.container-fluid {  
+.container-fluid {
 	animation: 1s ease-out 0s 1 slideInFromBottom;
 }
 
@@ -69,9 +69,9 @@ div.page-info-middle {
 .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover, .navbar-default .navbar-nav .open .dropdown-menu {
 	font-family: 'Roboto', sans-serif !important;
     background-color: #333333;
-    color: #AA88BB;	
+    color: #AA88BB;
  }
- 
+
  .navbar-default .navbar-nav .open .dropdown-menu>li>a, .navbar-default .navbar-nav .open .dropdown-menu {
 	font-family: 'Roboto', sans-serif !important;
     background-color: #444444;
@@ -79,18 +79,18 @@ div.page-info-middle {
 	transition: color 2s ease-in-out;
 	transition: background-color 1s ease-in-out;
  }
- 
+
  .jumbotron {
 	 background-color: #55555 !important;
  }
- 
+
  .dropdown-menu > li > a {
 	font-family: 'Roboto', sans-serif !important;
     background-color: #555555;
 	color: #AA88BB;
     background-image: none;
 }
- 
+
 .dropdown-menu > li > a:hover {
 	font-family: 'Roboto', sans-serif !important;
     background-color: #888888;
