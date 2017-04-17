@@ -214,3 +214,19 @@ div.DiscordDrawer div a div {
 	display: table-cell;
 	vertical-align: middle;
 }
+
+a.login {
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    color: white;
+    text-decoration: none;
+}
+
+a.login:hover {
+    background-color: black;
+}
