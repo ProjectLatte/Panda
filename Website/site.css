@@ -73,12 +73,17 @@ div.warning {
 
 div.blockContent {
     padding-left: 100px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 div.blockContent * {
     padding: 0px;
+    margin: 0px;
+}
+
+div.blockContent h1 {
+    margin-bottom: 10px;
 }
 
 div.blockLink {

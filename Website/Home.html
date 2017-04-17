@@ -60,7 +60,7 @@
 				<b>We ain't done!</b>
 				This website is under development. Forgive us if something doesn't work. :)
 			</div>
-			
+
 			<div class="blockContent blockLink">
 				<h1>What is Let's Explore?</h1>
 				Don't know what Let's Explore is, and want to find out more about it?
@@ -69,9 +69,23 @@
 				<h1>Let's Explorers</h1>
 				So who does Let's Explore? Tons of people! Click here to find out more.
 			</div>
-			<div class="blockContent blockLink">
-				<h1>Discord</h1>
-				Great! You know all about what we do and who does it. Join in the chatting fun at our Discord server!
+
+			<div class="discordBlocks">
+				<div class="blockContent blockLink discord" onclick="openDiscordDrawer();" id="DiscordSlider">
+					<h1>Discord</h1>
+					Great! You know all about what we do and who does it. Join in the chatting fun at our Discord server!
+				</div>
+				<div class="DiscordDrawer" id="DiscordDrawer">
+					<div style="background-color: rgb(40, 40, 40)">
+						<a href="https://discord.gg/aZ4CV3b"><div>Join</div></a>
+					</div>
+					<div style="background-color: rgb(80, 80, 80)">
+						<a href="https://discordapp.com"><div>What is Discord?</div></a>
+					</div>
+					<div style="background-color: rgb(120, 120, 120)"/>
+						<a href="Discord/Info/Discord.html"><div>More Info</div></a>
+					</div>
+				</div>
 			</div>
 			<div class="blockContent blockLink">
 				<h1>Forums</h1>
@@ -136,5 +150,8 @@
 				</div>
 			</div>
 		</div>
+
+		<!--Scripts-->
+		<script src="home.js"></script>
 	</body>
 </html>

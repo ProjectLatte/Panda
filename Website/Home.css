@@ -1,10 +1,10 @@
-@keyframes slideInFromBottom {
+@keyframes slideInFromLeft {
   0% {
-    transform: translateY(100%);
+    transform: translateX(-100%);
   }
   
   100% {
-    transform: translateY(0);
+    transform: translateX(0);
   }
 }
 
@@ -21,6 +21,7 @@
 
 body {
 	margin-top: 0px;
+	overflow-x: hidden;
 }
 
 div.page-info-middle {
@@ -38,7 +39,7 @@ div.page-info-middle {
 }
 
 .container-fluid {  
-	animation: 1s ease-out 0s 1 slideInFromBottom;
+	animation: 1s ease-out 0s 1 fadeIn;
 }
 
 .welcome {
@@ -164,4 +165,52 @@ div.page-info-middle {
 	border: 1px solid #111111;
 	position: relative;
 	color: black;
+}
+
+div.discord {
+	background-color: #7289DA;
+	color: white;
+	position: relative;
+	left: 0px;
+	transition: left .5s ease-out, .25s ease-out;
+	z-index: 9999;
+}
+
+div.discordBlocks {
+	margin-bottom: -147px;
+}
+
+div.DiscordDrawer {
+	position: relative;
+	top: -147px;
+	padding: 0px;
+	width: 95%;
+	display: flex;
+	flex-direction: row;
+}
+
+div.DiscordDrawer table {
+	width: 95vw;
+	color: white;
+	padding: 0px;
+	border: none;
+}
+
+div.DiscordDrawer div {
+	flex-grow: 1;
+	align-self: center;
+}
+
+div.DiscordDrawer div a {
+	display: table;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	height: 147px;
+	width: 100%;
+}
+
+div.DiscordDrawer div a div {
+	display: table-cell;
+	vertical-align: middle;
 }
