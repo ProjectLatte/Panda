@@ -52,7 +52,7 @@ session_start();
 						</li>-->
 					</ul>
 					<a class="login">
-						<?php if (isset($_SESSION['username'])) { echo htmlspecialchars($_SESSION['username'], ENT_QUOTES); } else { echo "Log In &gt;"; } ?>
+						<?php if (isset($_SESSION['currentuser'])) { echo htmlspecialchars($_SESSION['currentuser'], ENT_QUOTES); } else { echo "Log In &gt;"; } ?>
 					</a>
 				</div>
 			</div>
