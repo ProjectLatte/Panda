@@ -79,8 +79,7 @@ session_start();
                         <div>
                             <label for="password">Password</label>
                             <input type="password" name="password" />
-                        </div>
-                        <input type="hidden" name="redirect" value="/Website/Home.php" />
+		       </div>
                         
                         <div><div onclick="document.getElementById('loginForm').submit();" class="loginButton">Log In</div></div>
                     </form>
