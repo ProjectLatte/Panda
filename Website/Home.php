@@ -82,7 +82,7 @@ session_start();
                         </div>
                         <input type="hidden" name="redirect" value="/Website/Home.php" />
                         
-                        <div onclick="document.getElementById('loginForm').submit();" class="loginButton">Log In</div>
+                        <div><div onclick="document.getElementById('loginForm').submit();" class="loginButton">Log In</div></div>
                     </form>
 		</div>
 		<div class="page-info-middle">

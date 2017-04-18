@@ -25,6 +25,7 @@ div.navbar {
     justify-content: center;
     display: flex;
     align-items: center;
+    z-index: 99999;
 }
 
 div.navbarContent {
@@ -133,4 +134,22 @@ div.loginCredentials form {
 
 div.loginCredentials.open {
     top: 0px;
+}
+
+div.loginCredentials div.loginButton {
+    display: inline-block;
+    padding: 12px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: rgb(0, 150, 255);
+    color: white;
+}
+
+div.loginCredentials div.loginButton:hover {
+    background-color: rgb(0, 200, 255);
+}
+
+div.loginCredentials div.loginButton:active {
+    background-color: rgb(0, 100, 255);
 }
