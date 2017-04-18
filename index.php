@@ -53,7 +53,7 @@ session_start();
 					</ul>
 
 
-					<form action="/logout.php" method="POST" id="logoutForm" style="display: none">
+					<form action="/api/logout.php" method="POST" id="logoutForm" style="display: none">
                                             <input type="submit" name="logout" value="Log Out">
                                         </form>
 
@@ -70,7 +70,7 @@ session_start();
 
 		</div>
 		<div class="loginCredentials" id="loginCredentials">
-                    <form action="/dbtest.php" method="POST" id="loginForm">
+                    <form action="/backend/login.php" method="POST" id="loginForm">
                         <h1>Log In</h1>
                         <div>
                             <label for="username">Username</label>
