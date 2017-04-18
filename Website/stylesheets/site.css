@@ -116,9 +116,19 @@ div.loginCredentials {
     display: block;
     position: fixed;
     top: -248px;
-    height: 248px;
-    padding-top: 40px;
+    height: 200px;
+    padding-top: 48px;
+    padding-left: 100px;
     transition: .5s ease-out;
+    background-color: white;
+    width: 100%;
+    border-bottom: 1px solid black;
+    z-index: 0;
+}
+
+div.loginCredentials form {
+    display: flex;
+    flex-direction: column;
 }
 
 div.loginCredentials.open {

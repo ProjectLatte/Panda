@@ -61,7 +61,7 @@ session_start();
                                             if (isset($_SESSION['currentuser'])) {
                                                 echo '<a class="login logout" onclick="logout()">'.htmlspecialchars($_SESSION['currentuser'], ENT_QUOTES).'</a>';
                                             } else {
-                                                echo '<a class="login" href="#" onclick = "login()">Log In &gt;</a>';
+                                                echo '<a class="login" href="#" onclick="login()">Log In &gt;</a>';
                                             }
                                         ?>
 
@@ -70,10 +70,19 @@ session_start();
 
 		</div>
 		<div class="loginCredentials" id="loginCredentials">
-                    <form action="/dbtest.php" method="POST">
-                        <input type="text" name="username" />
-                        <input type="password" name="password" />
-                        <submit value="Go" />
+                    <form action="/dbtest.php" method="POST" id="loginForm">
+                        <h1>Log In</h1>
+                        <div>
+                            <label for="username">Username</label>
+                            <input type="text" name="username">
+                        </div>
+                        <div>
+                            <label for="password">Password</label>
+                            <input type="password" name="password" />
+                        </div>
+                        <input type="hidden" name="redirect" value="/Website/Home.php" />
+                        
+                        <div onclick="document.getElementById('loginForm').submit();" class="loginButton">Log In</div>
                     </form>
 		</div>
 		<div class="page-info-middle">
