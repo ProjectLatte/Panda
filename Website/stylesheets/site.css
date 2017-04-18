@@ -111,3 +111,16 @@ a.login {
 a.login:hover {
     background-color: black;
 }
+
+div.loginCredentials {
+    display: block;
+    position: fixed;
+    top: -248px;
+    height: 248px;
+    padding-top: 40px;
+    transition: .5s ease-out;
+}
+
+div.loginCredentials.open {
+    top: 0px;
+}
