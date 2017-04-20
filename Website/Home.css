@@ -1,16 +1,14 @@
 @keyframes slideInFromBottom {
-	
   0% {
     transform: translateY(100%);
   }
   
   100% {
-    transform: translateY(0);
+    transform: translateX(0);
   }
 }
 
 @keyframes fadeIn {
-	
   0% {
     opacity: 0;
 	filter: alpha(opacity=0); /* For IE8 and earlier */
@@ -21,37 +19,31 @@
   }
 }
 
-.page-info {
+body {
+	margin-top: 0px;
+	overflow-x: hidden;
+}
+
+div.page-info-middle {
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	color: #DDDDDD;
+	padding: 50px;
+	padding-top: 98px;
 	background-image: url('main_back.jpg');
 	background-size: 100% 400%;
 	background-repeat: no-repeat;
 	background-color: #BBAABB;
 	text-align: center;
+	margin: 0px;
 }
 
-.page-info-middle {
-	font-family: 'Roboto', sans-serif !important;
-	text-align: center;
-	cursor: pointer;
-	padding: 8px 18px;
-	border: 5px solid #DDDDDD;
-	position: relative;
-	color: #DDDDDD;
-	padding: 50px;
-}
-
-.list-view-items {  
+.container-fluid {  
 	animation: 1s ease-out 0s 1 slideInFromBottom;
-  
-	padding: 30px;
 }
 
 .welcome {
 	animation: 1s ease-in-out 0s 1 fadeIn
-}
-
-.html {
-	font-family: 'Roboto', sans-serif !important;
 }
 
 .navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a {
@@ -173,4 +165,52 @@
 	border: 1px solid #111111;
 	position: relative;
 	color: black;
+}
+
+div.discord {
+	background-color: #7289DA;
+	color: white;
+	position: relative;
+	left: 0px;
+	transition: left .5s ease-out, .25s ease-out;
+	z-index: 9999;
+}
+
+div.discordBlocks {
+	margin-bottom: -147px;
+}
+
+div.DiscordDrawer {
+	position: relative;
+	top: -147px;
+	padding: 0px;
+	width: 95%;
+	display: flex;
+	flex-direction: row;
+}
+
+div.DiscordDrawer table {
+	width: 95vw;
+	color: white;
+	padding: 0px;
+	border: none;
+}
+
+div.DiscordDrawer div {
+	flex-grow: 1;
+	align-self: center;
+}
+
+div.DiscordDrawer div a {
+	display: table;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	height: 147px;
+	width: 100%;
+}
+
+div.DiscordDrawer div a div {
+	display: table-cell;
+	vertical-align: middle;
 }
