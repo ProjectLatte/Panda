@@ -3,31 +3,31 @@ session_start();
 ?>
 <html>
 	<head>
-		<title>Home | Let's Explore</title>	
-		
+		<title>Home | Let's Explore</title>
+
 		<!-- Latest compiled and minified CSS -->
 		<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
-		<link rel="stylesheet" type="text/css" href="site.css" />
+		<link rel="stylesheet" type="text/css" href="stylesheets/site.css" />
 
 		<!-- jQuery library -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 
 		<!-- Latest compiled JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		
+
 		<!-- OTHER STUFF -->
-		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" /> 
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" type="text/css" href="Home.css" />
+		<link rel="stylesheet" type="text/css" href="stylesheets/Home.css" />
 	</head>
-	
+
 	<body>
 		<div class="page-info">
 			<div class="navbar">
 				<div class="navbarContent">
 					<div class="navbarImage">
-						<img src="le.png" class="navbar-brand" height="32">
+						<img src="imgs/logo_letsExplore.png" class="navbar-brand" height="32">
 					</div>
 					<ul class="navbarItems">
 						<li><a class="selectedItem" href="">Home</a></li>
@@ -43,7 +43,7 @@ session_start();
 								</li>
 								<li class="nav-dropdown-btn">
 									<a href="#"> Some other dude </a>
-								</li>	
+								</li>
 
 								<li class="nav-dropdown-btn">
 									<a href="#"> Another random dude </a>
@@ -51,23 +51,38 @@ session_start();
 							</ul>
 						</li>-->
 					</ul>
-					
-					
-					<form action="/logout.php" method="POST" id="logoutForm" style="display: none">
+
+
+					<form action="/api/logout.php" method="POST" id="logoutForm" style="display: none">
                                             <input type="submit" name="logout" value="Log Out">
                                         </form>
-                                        
+
                                         <?php
                                             if (isset($_SESSION['currentuser'])) {
                                                 echo '<a class="login logout" onclick="logout()">'.htmlspecialchars($_SESSION['currentuser'], ENT_QUOTES).'</a>';
                                             } else {
-                                                echo '<a class="login" href="/dbtest.php">Log In &gt;</a>';
+                                                echo '<a class="login" href="#" onclick="login()">Log In &gt;</a>';
                                             }
                                         ?>
-					
+
 				</div>
 			</div>
 
+		</div>
+		<div class="loginCredentials" id="loginCredentials">
+                    <form action="/backend/login.php" method="POST" id="loginForm">
+                        <h1>Log In</h1>
+                        <div>
+                            <label for="username">Username</label>
+                            <input type="text" name="username">
+                        </div>
+                        <div>
+                            <label for="password">Password</label>
+                            <input type="password" name="password" />
+		       </div>
+                        
+                        <div><div onclick="document.getElementById('loginForm').submit();" class="loginButton">Log In</div></div>
+                    </form>
 		</div>
 		<div class="page-info-middle">
 			<h1>Welcome to the Let's Explore Community Hub!</h1>
@@ -126,7 +141,7 @@ session_start();
 					<div class="col-xs-12 col-sm-6 col-md-3 list-item" style="height: 300px;">
 						<img style="width: 125; height: 125;" src="explorers.png">
 						<p href="#"> <strong> Let's Explore(ers) </strong> </a>
-						<p> So who does Let's Explore? Tons of people! Click here to find out more. <br> </p>					
+						<p> So who does Let's Explore? Tons of people! Click here to find out more. <br> </p>
 					</div>
 
 					<a class="card_text" data-toggle="modal" href="https://discord.gg/aZ4CV3b">
@@ -136,10 +151,10 @@ session_start();
 						<p> Great! You know all about what we do and who does it. Join in the chatting fun at our Discord server! <br> </p>
 						<FORM METHOD="LINK" ACTION="https://discordapp.com/">
 						<INPUT TYPE="submit" VALUE="What is Discord?" CLASS="btn btn-info">
-						</FORM>		
+						</FORM>
 						<FORM METHOD="LINK" ACTION="Discord/Info/Discord.html">
 						<INPUT TYPE="submit" VALUE="More info about our Discord Server" CLASS="btn btn-warning">
-						</FORM>		
+						</FORM>
 					</div>
 
 					<a class="card_text" data-toggle="modal" href="#">
@@ -155,7 +170,7 @@ session_start();
 					<div class="col-xs-12 col-sm-6 col-md-3 list-item" style="height: 300px;">
 						<img style="width: 122; height: 122;" src="le.png">
 						<p href="#"> <strong> Become a Let's Explorer </strong> </a>
-						<p> You want to become a Let's Explorer, eh? Welcome to the fun! Follow this guide! <br> </p>					
+						<p> You want to become a Let's Explorer, eh? Welcome to the fun! Follow this guide! <br> </p>
 					</div>
 				</div>
 			</div>-->
@@ -169,7 +184,7 @@ session_start();
 		</div>
 
 		<!--Scripts-->
-		<script src="home.js"></script>
-		<script src="site.js"></script>
+		<script src="scripts/home.js"></script>
+		<script src="scripts/site.js"></script>
 	</body>
 </html>

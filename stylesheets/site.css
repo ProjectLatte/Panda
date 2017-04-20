@@ -25,6 +25,7 @@ div.navbar {
     justify-content: center;
     display: flex;
     align-items: center;
+    z-index: 99999;
 }
 
 div.navbarContent {
@@ -110,4 +111,45 @@ a.login {
 
 a.login:hover {
     background-color: black;
+}
+
+div.loginCredentials {
+    display: block;
+    position: fixed;
+    top: -248px;
+    height: 200px;
+    padding-top: 48px;
+    padding-left: 100px;
+    transition: .5s ease-out;
+    background-color: white;
+    width: 100%;
+    border-bottom: 1px solid black;
+    z-index: 0;
+}
+
+div.loginCredentials form {
+    display: flex;
+    flex-direction: column;
+}
+
+div.loginCredentials.open {
+    top: 0px;
+}
+
+div.loginCredentials div.loginButton {
+    display: inline-block;
+    padding: 12px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: rgb(0, 150, 255);
+    color: white;
+}
+
+div.loginCredentials div.loginButton:hover {
+    background-color: rgb(0, 200, 255);
+}
+
+div.loginCredentials div.loginButton:active {
+    background-color: rgb(0, 100, 255);
 }

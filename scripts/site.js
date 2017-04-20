@@ -3,3 +3,8 @@ function logout() {
         document.getElementById("logoutForm").submit();
     }
 }
+
+function login() {
+    var loginDiv = document.getElementById("loginCredentials");
+    loginDiv.classList.toggle("open");
+}
