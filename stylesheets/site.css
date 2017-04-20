@@ -55,7 +55,8 @@ ul.navbarItems a {
     color: #fff;
     -webkit-transition: .25s ease-out;
     -moz-transition: .25s ease-out;
-    transition: .25s ease-out
+    transition: .25s ease-out;
+	transition: background-color .80s ease-in-out;
 }
 
 ul.navbarItems a.selectedItem {
@@ -107,6 +108,7 @@ a.login {
     color: white;
     text-decoration: none;
     cursor: pointer;
+	transition: background-color .80s ease-in-out;
 }
 
 a.login:hover {
