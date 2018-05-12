@@ -1,5 +1,7 @@
+# DISCONTINUED - ARCHIVED:
 # Let's Explore Project Latté Website
 
+***THIS IS DISCONTINUED***
 This is the official GitHub repository for Project Panda (The website portion of Project Latté). 
 
 Project Panda's features will include (see the [Whitepaper](https://docs.google.com/document/d/14VWXBxIrGsOFvggM_e6oAekCrn_I6TGmkiZPr2-ekUw/edit#) for more info):
